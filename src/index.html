@@ -4,19 +4,16 @@
     <meta charset="UTF-8">
     <title>Mishka</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
   </head>
 
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <img src="img/mishka-logo-mobile.jpg" alt="Mishka logo">
-        <button class="page-header__btn page-header__btn--toggle" > <img src="img/menu-close.jpg" alt="close"></button>
-        <button class="page-header__btn page-header__btn--toggle" > <img src="img/menu.jpg" alt="open"></button>
-      </div>
+      <div class="page-header__wrapper">
+        <button class="page-header__btn button" type="button"><img src="img/menu.jpg" alt="open"></button>
 
-      <nav class="main-nav" >
-        <div class="main-nav__wrapper">
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="#">Каталог товаров</a>
@@ -25,103 +22,77 @@
               <a href="#">Вязание на заказ</a>
             </li>
             <li class="main-nav__item">
-              <img src="img/search.jpg" alt="search">
               <a href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item main-nav-item--add">
-              <img src="img/cart.jpg" alt="cart">
               <a href="#">Корзина: пока пуста</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="main-content">
       <div class="container">
 
         <section class="toys">
-          <div class="toys__screen">
-            <h1 class="toys__title">Милые штуки ручной работы для дома</h1>
-            <img src="img/hero-mobile.jpg" alt="screen">
-          </div>
+          <h1 class="toys__title">Милые штуки ручной работы для дома</h1>
+
           <div class="toys__sort">
             <div class="toys__inter">
-              <h1>Предметы интерьера</h1>
-              <img src="img/interior.jpg" alt="">
+              <h1 class="toys__inter-title">Предметы интерьера</h1>
             </div>
             <div class="toys__kids">
-              <h1>Детские игрушки</h1>
-              <img src="img/toy-svg.jpg" alt="">
+              <h1 class="toys__kids-title">Детские игрушки</h1>
             </div>
           </div>
         </section>
 
-        <section class="feature">
-          <div class="feature__title">
-            <h1>Вязаные корзинки</h1>
-            <h2>Товар недели</h2>
-          </div>
+        <section class="product">
+          <h1 class="product__title">Вязаные корзинки</h1>
+          <h2 class="product__mini-title">Товар недели</h2>
 
-          <div class="feature__descr">
-            <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          </div>
+          <p class="product__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
-          <table class="feature__list">
+          <table class="product__table">
             <tr>
-              <td class="feature__field">Цвет</td>
-              <td class="feature__value">«Тиффани»/серый</td>
+              <td class="product__field">Цвет</td>
+              <td class="product__value">«Тиффани»/серый</td>
             </tr>
             <tr>
-              <td class="feature__field">Диаметр</td>
-              <td class="feature__value">25 см</td>
+              <td class="product__field">Диаметр</td>
+              <td class="product__value">25 см</td>
             </tr>
             <tr>
-              <td class="feature__field">Высота</td>
-              <td class="feature__value">15 см</td>
+              <td class="product__field">Высота</td>
+              <td class="product__value">15 см</td>
             </tr>
           </table>
 
-          <div class="feature__img">
-            <img src="img/triple-set-mobile.jpg" alt="">
-          </div>
+          <img class="product__img" src="img/triple-set-mobile.svg" alt="">
 
-          <div class="feature__cost">
-            <h3>Цена: 990 руб.</h3>
-          </div>
+          <div class="product__cost">Цена: 990 руб.</div>
 
-          <div class="feature__order">
-            <button class="feature__btn feature__btn--push" >
-              <a href="#">Заказать</a>
-            </button>
-          </div>
+          <a href="#" class="product__btn button button--push">Заказать</a>
         </section>
 
         <section class="about">
           <h1 class="about__title">Коротко о нас</h1>
           <ul class="about__list">
-            <img src="img/icon-1.jpg" alt="">
-            <li class="about__item">Экологически чистые материалы</li>
-            <img src="img/icon-3.jpg" alt="">
-            <li class="about__item">Скандинавский стиль по российской цене</li>
-            <img src="img/icon-5.jpg" alt="">
-            <li class="about__item">Увеличивает лайки на фотографиях</li>
-            <img src="img/icon-2.jpg" alt="">
-            <li class="about__item">Связано вручную с любовью и умилением</li>
-            <img src="img/icon-4.jpg" alt="">
-            <li class="about__item">Поддержка отечественного производителя</li>
-            <img src="img/icon-6.jpg" alt="">
-            <li class="about__item">Поставляется в подарочной упаковке</li>
+            <li class="about__item about__item--material">Экологически чистые материалы</li>
+            <li class="about__item about__item--cost">Скандинавский стиль по российской цене</li>
+            <li class="about__item about__item--like">Увеличивает лайки на фотографиях</li>
+            <li class="about__item about__item--love">Связано вручную с любовью и умилением</li>
+            <li class="about__item about__item--country">Поддержка отечественного производителя</li>
+            <li class="about__item about__item--gift">Поставляется в подарочной упаковке</li>
           </ul>
         </section>
 
         <section class="review">
           <h1 class="review__title">Отзывы</h1>
-          <div class="review__comment">
-            <p>Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков,
+          <p class="review__comment">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков,
               как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек
               в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
-          </div>
 
           <div class="review__name">
             <h3 class="review__fullname">Анастасия Красильникова</h3>
@@ -137,48 +108,38 @@
             </button>
           </div>
 
-          <div class="review__write">
-            <button class="review__btn review__btn--push" >
-              <a href="#">Отправить</a>
-            </button>
-          </div>
+          <a href="#" class="review__btn button button--push">Заказать</a>
         </section>
 
         <section class="contact">
           <h1 class="contact__title">Контакты</h1>
-          <table class="contact__list">
+          <table class="contact__table">
             <tr>
               <td class="contact__field">e-mail</td>
               <td class="contact__value">info@mimimishkashop.ru</td>
             </tr>
             <tr>
               <td class="contact__field">адрес</td>
-              <td class="contact__value">г. Санкт-Петербург,
-                                        ул. Большая Конюшенная,
-                                        д. 19/8, офис 101</td>
+              <td class="contact__value">г. Санкт-Петербург, ул. Большая Конюшенная,
+                                         д. 19/8, офис 101</td>
             </tr>
           </table>
 
-          <div class="contact__write">
-            <button class="write__btn review__btn--push" >
-              <a href="#">Отправить</a>
-            </button>
-           </div>
+          <a href="#" class="contact__btn button button--push">Заказать</a>
         </section>
 
       </div>
     </main>
 
-    <footer>
-      <div class="footer__links">
-        <a class="footer__inst"><img src="img/insta.jpg" alt="inst"></a>
-        <a class="footer__fb"><img src="img/fb.jpg" alt="facebook"></a>
-        <a class="footer__tw"><img src="img/twitter.jpg" alt="twitter"></a>
-      </div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__social">
+          <a class="footer__inst"></a>
+          <a class="footer__fb"></a>
+          <a class="footer__tw"></a>
+        </div>
 
-      <div class="footer__dev">
-        <h3 class="footer__title">Разработано</h3>
-        <a class="footer__ha"><img src="img/htmlacademy.jpg" alt="ha"></a>
+        <a class="footer__ha">Разработано</a>
       </div>
     </footer>
   </body>
